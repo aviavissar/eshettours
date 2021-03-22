@@ -1,0 +1,32 @@
+.card{
+  //  width: min-content;
+    &:hover{
+        border-color:black ;
+    }
+    margin: 15px 14px;
+    border-radius: 0;
+    height: 300px;
+}
+.card-body {
+  padding: 0;
+  font-weight: 600;
+}
+.details-box {
+  padding: 5%;
+}
+.card-img-top{
+  height: 220px;
+}
+
+
+@media only screen and (max-width: 400px) {
+   .card{
+    width: 100%;
+margin: 10px 0;
+height: initial;
+   } 
+   .card-img-top{
+    width: 100%;
+    height: initial;
+}
+}

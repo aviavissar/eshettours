@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+main {
+  padding: 2% 1%;
+  border: 1px solid #00bcd4;
+  border-radius: 5px;
+}
+.App-header h1 {
+  font-size: 26px;
+  line-height: 2;
+  font-weight: 500;
+}
+.container span {
+  direction: rtl;
+  padding: 0 20px;
+  font-size: 18px;
+}
+.App {
+  padding: 50px 150px;
+  direction: rtl;
+  font-family: Ariel, sans-serif;
+  text-align: right;
+}
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #000000;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.loader--hide {
+  opacity: 0;
+}
+
+@keyframes load8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .App {
+    padding: 15px;
+  }
+  main {
+    padding: 5% 1%;
+  }
+  .filter .row{
+    margin-bottom: 10px;
+  }
+  input{
+    width:150px;
+  }
+  .App-header h1{
+    font-size: 24px;
+  }
+}
